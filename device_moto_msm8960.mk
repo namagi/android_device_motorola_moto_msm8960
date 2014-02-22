@@ -135,7 +135,8 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	persist.radio.no_wait_for_card=1 \
 	persist.radio.call_type=1 \
 	persist.radio.apm_sim_not_pwdn=1 \
-	persist.timed.enable=true
+	persist.timed.enable=true   \
+	persist.sys.report_gprs_as_edge=1
 
 # Radio and Telephony
 PRODUCT_PROPERTY_OVERRIDES += \
@@ -149,7 +150,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Wifi
 PRODUCT_PROPERTY_OVERRIDES += \
     wifi.interface=wlan0 \
-    wifi.supplicant_scan_interval=30
+    wifi.supplicant_scan_interval=90
+
+# LCD density
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.sf.lcd_density=220
 
 $(call inherit-product, device/motorola/qcom-common/qcom-common.mk)
 $(call inherit-product, device/motorola/qcom-common/idc/idc.mk)
