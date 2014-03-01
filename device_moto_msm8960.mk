@@ -135,8 +135,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 	persist.radio.no_wait_for_card=1 \
 	persist.radio.call_type=1 \
 	persist.radio.apm_sim_not_pwdn=1 \
-	persist.timed.enable=true   \
-	persist.sys.report_gprs_as_edge=1
+	persist.timed.enable=true
 
 # Radio and Telephony
 PRODUCT_PROPERTY_OVERRIDES += \
