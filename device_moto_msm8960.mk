@@ -161,7 +161,16 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Wifi
 PRODUCT_PROPERTY_OVERRIDES += \
     wifi.interface=wlan0 \
-    wifi.supplicant_scan_interval=30
+    wifi.supplicant_scan_interval=90
+
+# LCD density
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.sf.lcd_density=220
+
+# dexopt to /cache
+PRODUCT_PROPERTY_OVERRIDES += \
+    dalvik.vm.dexopt-data-only=0
+
 
 $(call inherit-product, device/motorola/qcom-common/qcom-common.mk)
 $(call inherit-product, device/motorola/qcom-common/idc/idc.mk)
